@@ -1,0 +1,147 @@
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.nutri-heading {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 0;
+  background: #f0f4f8;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+}
+
+.get-started-btn {
+  background: #36a2eb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.get-started-btn:hover {
+  background: #2c8cc9;
+}
+
+.why-choose, .how-it-works {
+  padding: 40px 0;
+}
+
+.why-choose-items, .how-steps {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.why-item, .step {
+  flex: 1 1 300px;
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.why-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.options-page {
+  padding: 20px;
+}
+
+.options-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.option-card {
+  flex: 1 1 300px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.option-card input, .option-card select {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.option-card button {
+  background: #36a2eb;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.option-card button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  display: block;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #2c3e50;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nutri-heading {
+    font-size: 1.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+
+  .why-item, .step, .option-card {
+    flex: 1 1 100%;
+  }
+}
